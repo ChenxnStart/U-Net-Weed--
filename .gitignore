@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+# 忽略数据集和权重文件（根据您的实际情况调整）
+*.pth
+*.pt
+dataset/
+data/
+runs/
+wandb/
