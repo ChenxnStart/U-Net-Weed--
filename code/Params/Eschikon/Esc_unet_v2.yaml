@@ -1,0 +1,30 @@
+experiment:
+  name: benchmark_weedmap_msfusion
+  group: Benchmark_Comparisons
+
+parameters:
+  dataset_interface: [wd/data/WeedMapDatasetInterface] # 对应处理 WeedMap 的代码类
+
+  train_params:
+    loss:
+      name: [ focal ]
+      params:
+        weight: [ null ] # 【关键】设为 null，触发代码里的自动计算逻辑
+        gamma: [ 2.0 ]
+
+  model:
+    name: [wd/models/msfusion]
+    params:
+      norm_type: ['bn'] # 公开数据集一般只用 BN 即可，或者对比 IN
+      dilation: [2]
+
+  dataset:
+    root: ["dataset/WeedMap"] # 指向 WeedMap 路径
+    num_classes: [3]          # 0:背景, 1:作物, 2:杂草
+    
+    # 公开数据集通常只有 RGB，或者模拟 RGB+ExG
+    channels: [
+        ['R', 'G', 'B'],
+        ['R', 'G', 'B', 'ExG'] # 建议加上 ExG 植被指数增强竞争力
+    ]
+    # ... 其他参数 ...
