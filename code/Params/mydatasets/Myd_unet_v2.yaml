@@ -4,10 +4,10 @@ experiment:
 
 parameters:
   # 指向刚才写的简单接口
-  dataset_interface: [wd/data/simple_dataset/SimpleDatasetInterface]
+  dataset_interface: [/media/cclsol/df07c0f4-31b8-4090-8a4a-8c254d91c123/ch/MSU-Net/U-Net-v2/code/data/my_dataset.py]
 
   train_params:
-    max_epochs: [500]
+    max_epochs: [100]
     initial_lr: [0.0001]
     optimizer: [Adam]
     loss:
@@ -17,17 +17,19 @@ parameters:
         gamma: [ 2.0 ]
     
   model:
-    name: [wd/models/msfusion]
+    name: [/media/cclsol/df07c0f4-31b8-4090-8a4a-8c254d91c123/ch/MSU-Net/U-Net-v2/code/MODEL/msfusion.py]
     params:
       norm_type: ['bn'] # 同源数据用 BN
       dilation: [2]     # 开启空洞
 
   dataset:
-    root: ["dataset/MyRiceData"] # 修改为您真实的路径
+    root: ["/media/cclsol/df07c0f4-31b8-4090-8a4a-8c254d91c123/ch/MSU-Net/dataset"] # 修改为您真实的路径
     # 确保此路径下有 train/images, train/masks 等
     
-    num_classes: [3] # 根据您 mask 里的最大值修改
+    num_classes: [2] # 根据您 mask 里的最大值修改
     batch_size: [4]
     
     # 这里的 channels 只是备注，实际上取决于 simple_dataset.py 读到了多少通道
-    channels: [['R', 'G', 'B', 'NIR', 'RE']]
+    # ✅ 推荐写法
+    # ✅ 修正写法
+    channels: [['rgb', 'nir', 're', 'red', 'green']]
