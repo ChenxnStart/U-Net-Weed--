@@ -1,0 +1,21 @@
+parameters:
+  dataset:
+    # 1. 根目录：指向第二个数据集
+    root: ["/media/cclsol/df07c0f4-31b8-4090-8a4a-8c254d91c123/ch/MSU-Net/weedsgalore/Weeds_Full_Standard"]
+    
+    # 2. 通道配置：RGB(3) + NIR(1) + Rededge(1) = 5通道输入
+    channels: [['rgb', 'nir', 'rededge']]
+    
+    # 3. 类别数：3类 (0:背景, 1:作物, 2:杂草)
+    num_classes: [3]
+    
+    # 4. 训练参数：建议在 4090 上保持 4 或 8
+    batch_size: [8]
+    img_size: [512]
+    num_workers: [4]
+
+  train_params:
+    initial_lr: [0.0001]
+    max_epochs: [100]
+    # 训练权重保存的基础路径 (注意：脚本内部会自动根据数据集名在 Checkpoints 下建子目录)
+    save_dir: ["/media/cclsol/df07c0f4-31b8-4090-8a4a-8c254d91c123/ch/MSU-Net/U-Net-v2/code/Checkpoints/weeds_gal"]

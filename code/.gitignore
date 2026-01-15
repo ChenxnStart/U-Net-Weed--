@@ -1,0 +1,5 @@
+Checkpoints/
+LOG/
+VIS_Results/
+FETCH_HEAD
+*.log

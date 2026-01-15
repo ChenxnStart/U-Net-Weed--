@@ -1,30 +1,19 @@
-experiment:
-  name: benchmark_weedmap_msfusion
-  group: Benchmark_Comparisons
-
 parameters:
-  dataset_interface: [wd/data/WeedMapDatasetInterface] # 对应处理 WeedMap 的代码类
+  dataset:
+    # 根目录指向新数据集 rededge
+    root: "/media/cclsol/df07c0f4-31b8-4090-8a4a-8c254d91c123/ch/MSU-Net/weedsgalore/Weeds_Full_Standard"
+    
+    # 通道配置：RGB(3) + NIR(1) + RedEdge(1) = 5通道
+    channels: [['rgb', 'nir', 'rededge']]
+    
+    # 类别数：3类 (0: 背景, 1: 作物, 2: 杂草)
+    num_classes: [3]
+    
+    batch_size: [8]
+    img_size: [512]
+    num_workers: [0]
 
   train_params:
-    loss:
-      name: [ focal ]
-      params:
-        weight: [ null ] # 【关键】设为 null，触发代码里的自动计算逻辑
-        gamma: [ 2.0 ]
-
-  model:
-    name: [wd/models/msfusion]
-    params:
-      norm_type: ['bn'] # 公开数据集一般只用 BN 即可，或者对比 IN
-      dilation: [2]
-
-  dataset:
-    root: ["dataset/WeedMap"] # 指向 WeedMap 路径
-    num_classes: [3]          # 0:背景, 1:作物, 2:杂草
-    
-    # 公开数据集通常只有 RGB，或者模拟 RGB+ExG
-    channels: [
-        ['R', 'G', 'B'],
-        ['R', 'G', 'B', 'ExG'] # 建议加上 ExG 植被指数增强竞争力
-    ]
-    # ... 其他参数 ...
+    initial_lr: [0.0001]
+    max_epochs: [100]
+    save_dir: "checkpoints/weeds_redege"
