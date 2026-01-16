@@ -2,63 +2,6 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-
-# --- ASPP Module (Atrous Spatial Pyramid Pooling) ---
-class ASPP(nn.Module):
-    def __init__(self, in_channels, out_channels, rates=[1, 6, 12, 18]):
-        super(ASPP, self).__init__()
-        self.stages = nn.ModuleList()
-        
-        # 1. 1x1 卷积 (膨胀率为1)
-        self.stages.append(nn.Sequential(
-            nn.Conv2d(in_channels, out_channels, kernel_size=1, bias=False),
-            nn.BatchNorm2d(out_channels),
-            nn.SiLU(inplace=True)
-        ))
-        
-        # 2-4. 不同速率的 3x3 空洞卷积
-        # 确保 rates 列表中的第一个 rate 不被重复使用 (这里从 rates[1:] 开始)
-        for rate in rates[1:]:
-            self.stages.append(nn.Sequential(
-                nn.Conv2d(in_channels, out_channels, kernel_size=3, 
-                          padding=rate, dilation=rate, bias=False),
-                nn.BatchNorm2d(out_channels),
-                nn.SiLU(inplace=True)
-            ))
-            
-        # 5. 全局平均池化 (获取整张图的全局信息)
-        self.global_avg_pool = nn.Sequential(
-            nn.AdaptiveAvgPool2d(1), # 全局池化到 1x1
-            nn.Conv2d(in_channels, out_channels, kernel_size=1, bias=False),
-            nn.BatchNorm2d(out_channels),
-            nn.SiLU(inplace=True)
-        )
-        
-        # 6. 融合后的 1x1 卷积 (将所有分支的输出拼接后，降维)
-        self.bottleneck = nn.Sequential(
-            nn.Conv2d(out_channels * 5, out_channels, kernel_size=1, bias=False), # 5 个分支
-            nn.BatchNorm2d(out_channels),
-            nn.SiLU(inplace=True),
-            nn.Dropout(0.1) # 增加 Dropout 防止过拟合
-        )
-
-    def forward(self, x):
-        res = []
-        for stage in self.stages:
-            res.append(stage(x)) # 各个卷积分支的输出
-        
-        # 处理全局池化分支
-        gh, gw = x.shape[2:]
-        global_features = self.global_avg_pool(x)
-        # 将 1x1 的全局特征上采样回原来的尺寸
-        global_features = F.interpolate(global_features, size=(gh, gw), mode='bilinear', align_corners=True)
-        res.append(global_features)
-        
-        # 拼接所有分支的输出
-        out = torch.cat(res, dim=1)
-        # 通过 1x1 卷积降维
-        return self.bottleneck(out)
-        
 # --- 1. SE-Block (通道注意力) ---
 class SEBlock(nn.Module):
     def __init__(self, in_channels, reduction=16):
@@ -143,9 +86,6 @@ class MSFusionUNet(nn.Module):
 
         # [Step 3] Middle: 空洞卷积扩大视野
         self.middle = DoubleConv(256, 512, dilation=dilation, norm_type=norm_type)
-        # ✅ 【新增】ASPP 模块，位于 Middle 之后
-        # 输入通道为 middle 的输出通道 (512)，输出通道也为 512，以便与解码器连接
-        self.aspp = ASPP(in_channels=512, out_channels=512, rates=[1, 6, 12, 18])
 
         # [Step 4] Decoder (使用 BN 恢复特征)
         self.up3 = nn.ConvTranspose2d(512, 256, kernel_size=2, stride=2)
@@ -187,7 +127,6 @@ class MSFusionUNet(nn.Module):
         
         # 3. Middle
         mid = self.middle(p3)
-        mid = self.aspp(mid)
         
         # 4. Decoder
         d3 = self.up3(mid)

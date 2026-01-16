@@ -1,19 +1,9 @@
 parameters:
   dataset:
-    # 根目录指向新数据集 rededge
-    root: "/media/cclsol/df07c0f4-31b8-4090-8a4a-8c254d91c123/ch/MSU-Net/weedsgalore/Weeds_Full_Standard"
-    
-    # 通道配置：RGB(3) + NIR(1) + RedEdge(1) = 5通道
-    channels: [['rgb', 'nir', 'rededge']]
-    
-    # 类别数：3类 (0: 背景, 1: 作物, 2: 杂草)
-    num_classes: [3]
-    
-    batch_size: [8]
-    img_size: [512]
-    num_workers: [0]
-
-  train_params:
-    initial_lr: [0.0001]
-    max_epochs: [100]
-    save_dir: "checkpoints/weeds_redege"
+    name: "Eschikon_unetv2"
+    root: "/media/cclsol/Chen/Lawin/LWViTs-for-weedmapping/dataset/processed"
+    train_split: "/media/cclsol/df07c0f4-31b8-4090-8a4a-8c254d91c123/ch/MSU-Net/MSU-Net/code/splits/train.txt"
+    val_split: "/media/cclsol/df07c0f4-31b8-4090-8a4a-8c254d91c123/ch/MSU-Net/MSU-Net/code/splits/val.txt"
+    num_classes: 3
+    input_size: [512, 512]
+    channels: ["RGB", "NIR", "RE"] # 根据实际波段修改

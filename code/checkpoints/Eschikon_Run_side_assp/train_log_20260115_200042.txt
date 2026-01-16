@@ -1,0 +1,362 @@
+2026-01-15 20:00:42,290 | 🚀 启动训练 | 设备: cuda
+2026-01-15 20:00:42,290 | 🔄 加载数据集...
+2026-01-15 20:00:42,308 | ✅ 训练集: 612 | 验证集: 204
+2026-01-15 20:01:37,439 | 
+📊 Ep 1 Result:
+   Train Loss: 0.7192 | Val Loss: 0.7103
+   mIoU: 55.16% | mF1: 66.65%
+   [F1 Detail] Crop: 62.27% | Weed: 40.16% (目标)
+2026-01-15 20:01:37,481 | 🌟 新高! 模型已保存: /media/cclsol/df07c0f4-31b8-4090-8a4a-8c254d91c123/ch/MSU-Net/U-Net-v2/code/checkpoints/Eschikon_Run/best_model.pth
+2026-01-15 20:02:31,236 | 
+📊 Ep 2 Result:
+   Train Loss: 0.5940 | Val Loss: 0.5476
+   mIoU: 59.43% | mF1: 70.83%
+   [F1 Detail] Crop: 68.32% | Weed: 45.90% (目标)
+2026-01-15 20:02:31,460 | 🌟 新高! 模型已保存: /media/cclsol/df07c0f4-31b8-4090-8a4a-8c254d91c123/ch/MSU-Net/U-Net-v2/code/checkpoints/Eschikon_Run/best_model.pth
+2026-01-15 20:03:25,263 | 
+📊 Ep 3 Result:
+   Train Loss: 0.5250 | Val Loss: 0.5376
+   mIoU: 55.21% | mF1: 66.97%
+   [F1 Detail] Crop: 59.02% | Weed: 44.26% (目标)
+2026-01-15 20:04:18,506 | 
+📊 Ep 4 Result:
+   Train Loss: 0.4494 | Val Loss: 0.4761
+   mIoU: 56.46% | mF1: 67.56%
+   [F1 Detail] Crop: 67.37% | Weed: 37.67% (目标)
+2026-01-15 20:05:12,405 | 
+📊 Ep 5 Result:
+   Train Loss: 0.3870 | Val Loss: 0.3738
+   mIoU: 69.47% | mF1: 80.10%
+   [F1 Detail] Crop: 78.47% | Weed: 62.80% (目标)
+2026-01-15 20:05:12,633 | 🌟 新高! 模型已保存: /media/cclsol/df07c0f4-31b8-4090-8a4a-8c254d91c123/ch/MSU-Net/U-Net-v2/code/checkpoints/Eschikon_Run/best_model.pth
+2026-01-15 20:06:06,732 | 
+📊 Ep 6 Result:
+   Train Loss: 0.3475 | Val Loss: 0.3445
+   mIoU: 60.53% | mF1: 71.41%
+   [F1 Detail] Crop: 73.79% | Weed: 42.34% (目标)
+2026-01-15 20:07:00,257 | 
+📊 Ep 7 Result:
+   Train Loss: 0.3054 | Val Loss: 0.3071
+   mIoU: 66.27% | mF1: 77.56%
+   [F1 Detail] Crop: 72.34% | Weed: 61.44% (目标)
+2026-01-15 20:07:54,008 | 
+📊 Ep 8 Result:
+   Train Loss: 0.2642 | Val Loss: 0.2402
+   mIoU: 67.03% | mF1: 77.86%
+   [F1 Detail] Crop: 77.61% | Weed: 57.17% (目标)
+2026-01-15 20:08:47,851 | 
+📊 Ep 9 Result:
+   Train Loss: 0.2389 | Val Loss: 0.2285
+   mIoU: 66.55% | mF1: 77.42%
+   [F1 Detail] Crop: 76.61% | Weed: 56.63% (目标)
+2026-01-15 20:09:41,751 | 
+📊 Ep 10 Result:
+   Train Loss: 0.2174 | Val Loss: 0.2271
+   mIoU: 64.53% | mF1: 75.32%
+   [F1 Detail] Crop: 76.21% | Weed: 50.73% (目标)
+2026-01-15 20:10:35,335 | 
+📊 Ep 11 Result:
+   Train Loss: 0.1942 | Val Loss: 0.1939
+   mIoU: 63.81% | mF1: 74.84%
+   [F1 Detail] Crop: 75.17% | Weed: 50.78% (目标)
+2026-01-15 20:11:28,792 | 
+📊 Ep 12 Result:
+   Train Loss: 0.1760 | Val Loss: 0.1616
+   mIoU: 71.19% | mF1: 81.50%
+   [F1 Detail] Crop: 80.17% | Weed: 65.19% (目标)
+2026-01-15 20:11:29,023 | 🌟 新高! 模型已保存: /media/cclsol/df07c0f4-31b8-4090-8a4a-8c254d91c123/ch/MSU-Net/U-Net-v2/code/checkpoints/Eschikon_Run/best_model.pth
+2026-01-15 20:12:23,140 | 
+📊 Ep 13 Result:
+   Train Loss: 0.1692 | Val Loss: 0.1757
+   mIoU: 72.62% | mF1: 82.69%
+   [F1 Detail] Crop: 81.09% | Weed: 67.76% (目标)
+2026-01-15 20:12:23,399 | 🌟 新高! 模型已保存: /media/cclsol/df07c0f4-31b8-4090-8a4a-8c254d91c123/ch/MSU-Net/U-Net-v2/code/checkpoints/Eschikon_Run/best_model.pth
+2026-01-15 20:13:17,399 | 
+📊 Ep 14 Result:
+   Train Loss: 0.1525 | Val Loss: 0.1513
+   mIoU: 66.58% | mF1: 77.35%
+   [F1 Detail] Crop: 77.81% | Weed: 55.37% (目标)
+2026-01-15 20:14:10,981 | 
+📊 Ep 15 Result:
+   Train Loss: 0.1399 | Val Loss: 0.1372
+   mIoU: 67.90% | mF1: 78.71%
+   [F1 Detail] Crop: 77.47% | Weed: 59.70% (目标)
+2026-01-15 20:15:04,425 | 
+📊 Ep 16 Result:
+   Train Loss: 0.1359 | Val Loss: 0.1744
+   mIoU: 60.21% | mF1: 71.06%
+   [F1 Detail] Crop: 72.67% | Weed: 42.04% (目标)
+2026-01-15 20:15:58,141 | 
+📊 Ep 17 Result:
+   Train Loss: 0.1300 | Val Loss: 0.1115
+   mIoU: 70.22% | mF1: 80.85%
+   [F1 Detail] Crop: 77.73% | Weed: 65.77% (目标)
+2026-01-15 20:16:52,460 | 
+📊 Ep 18 Result:
+   Train Loss: 0.1225 | Val Loss: 0.1156
+   mIoU: 72.31% | mF1: 82.31%
+   [F1 Detail] Crop: 82.09% | Weed: 65.61% (目标)
+2026-01-15 20:17:45,932 | 
+📊 Ep 19 Result:
+   Train Loss: 0.1102 | Val Loss: 0.1058
+   mIoU: 69.14% | mF1: 79.97%
+   [F1 Detail] Crop: 76.48% | Weed: 64.44% (目标)
+2026-01-15 20:18:39,637 | 
+📊 Ep 20 Result:
+   Train Loss: 0.1291 | Val Loss: 0.0964
+   mIoU: 73.89% | mF1: 83.15%
+   [F1 Detail] Crop: 86.95% | Weed: 63.21% (目标)
+2026-01-15 20:18:39,854 | 🌟 新高! 模型已保存: /media/cclsol/df07c0f4-31b8-4090-8a4a-8c254d91c123/ch/MSU-Net/U-Net-v2/code/checkpoints/Eschikon_Run/best_model.pth
+2026-01-15 20:19:34,298 | 
+📊 Ep 21 Result:
+   Train Loss: 0.1124 | Val Loss: 0.0915
+   mIoU: 76.60% | mF1: 85.44%
+   [F1 Detail] Crop: 87.58% | Weed: 69.28% (目标)
+2026-01-15 20:19:34,538 | 🌟 新高! 模型已保存: /media/cclsol/df07c0f4-31b8-4090-8a4a-8c254d91c123/ch/MSU-Net/U-Net-v2/code/checkpoints/Eschikon_Run/best_model.pth
+2026-01-15 20:20:28,313 | 
+📊 Ep 22 Result:
+   Train Loss: 0.1063 | Val Loss: 0.0927
+   mIoU: 69.85% | mF1: 80.42%
+   [F1 Detail] Crop: 78.87% | Weed: 63.38% (目标)
+2026-01-15 20:21:22,152 | 
+📊 Ep 23 Result:
+   Train Loss: 0.1017 | Val Loss: 0.0767
+   mIoU: 75.96% | mF1: 85.04%
+   [F1 Detail] Crop: 86.42% | Weed: 69.31% (目标)
+2026-01-15 20:22:16,611 | 
+📊 Ep 24 Result:
+   Train Loss: 0.0976 | Val Loss: 0.0888
+   mIoU: 70.47% | mF1: 80.58%
+   [F1 Detail] Crop: 82.48% | Weed: 60.18% (目标)
+2026-01-15 20:23:10,414 | 
+📊 Ep 25 Result:
+   Train Loss: 0.0925 | Val Loss: 0.0796
+   mIoU: 73.83% | mF1: 83.23%
+   [F1 Detail] Crop: 85.97% | Weed: 64.47% (目标)
+2026-01-15 20:24:04,419 | 
+📊 Ep 26 Result:
+   Train Loss: 0.0886 | Val Loss: 0.0891
+   mIoU: 68.78% | mF1: 79.39%
+   [F1 Detail] Crop: 78.81% | Weed: 60.32% (目标)
+2026-01-15 20:24:58,505 | 
+📊 Ep 27 Result:
+   Train Loss: 0.0917 | Val Loss: 0.0814
+   mIoU: 76.49% | mF1: 85.49%
+   [F1 Detail] Crop: 86.20% | Weed: 70.82% (目标)
+2026-01-15 20:24:58,738 | 🌟 新高! 模型已保存: /media/cclsol/df07c0f4-31b8-4090-8a4a-8c254d91c123/ch/MSU-Net/U-Net-v2/code/checkpoints/Eschikon_Run/best_model.pth
+2026-01-15 20:25:52,744 | 
+📊 Ep 28 Result:
+   Train Loss: 0.0930 | Val Loss: 0.0817
+   mIoU: 68.66% | mF1: 79.13%
+   [F1 Detail] Crop: 80.30% | Weed: 58.13% (目标)
+2026-01-15 20:26:46,583 | 
+📊 Ep 29 Result:
+   Train Loss: 0.0906 | Val Loss: 0.0869
+   mIoU: 66.43% | mF1: 77.22%
+   [F1 Detail] Crop: 77.76% | Weed: 55.09% (目标)
+2026-01-15 20:27:40,485 | 
+📊 Ep 30 Result:
+   Train Loss: 0.0879 | Val Loss: 0.1364
+   mIoU: 58.19% | mF1: 69.21%
+   [F1 Detail] Crop: 69.92% | Weed: 39.74% (目标)
+2026-01-15 20:28:34,343 | 
+📊 Ep 31 Result:
+   Train Loss: 0.0831 | Val Loss: 0.0717
+   mIoU: 70.21% | mF1: 80.50%
+   [F1 Detail] Crop: 81.26% | Weed: 61.18% (目标)
+2026-01-15 20:29:28,515 | 
+📊 Ep 32 Result:
+   Train Loss: 0.0806 | Val Loss: 0.0747
+   mIoU: 69.82% | mF1: 80.03%
+   [F1 Detail] Crop: 82.07% | Weed: 59.01% (目标)
+2026-01-15 20:30:22,613 | 
+📊 Ep 33 Result:
+   Train Loss: 0.0797 | Val Loss: 0.0851
+   mIoU: 65.56% | mF1: 76.79%
+   [F1 Detail] Crop: 73.57% | Weed: 57.98% (目标)
+2026-01-15 20:31:16,891 | 
+📊 Ep 34 Result:
+   Train Loss: 0.0777 | Val Loss: 0.0728
+   mIoU: 70.68% | mF1: 80.79%
+   [F1 Detail] Crop: 82.45% | Weed: 60.81% (目标)
+2026-01-15 20:32:11,185 | 
+📊 Ep 35 Result:
+   Train Loss: 0.0776 | Val Loss: 0.0678
+   mIoU: 71.31% | mF1: 81.14%
+   [F1 Detail] Crop: 84.26% | Weed: 60.07% (目标)
+2026-01-15 20:33:05,681 | 
+📊 Ep 36 Result:
+   Train Loss: 0.0808 | Val Loss: 0.0713
+   mIoU: 72.54% | mF1: 82.14%
+   [F1 Detail] Crop: 84.97% | Weed: 62.08% (目标)
+2026-01-15 20:34:00,162 | 
+📊 Ep 37 Result:
+   Train Loss: 0.0738 | Val Loss: 0.0650
+   mIoU: 73.45% | mF1: 83.08%
+   [F1 Detail] Crop: 84.52% | Weed: 65.48% (目标)
+2026-01-15 20:34:54,505 | 
+📊 Ep 38 Result:
+   Train Loss: 0.0729 | Val Loss: 0.0664
+   mIoU: 69.90% | mF1: 80.28%
+   [F1 Detail] Crop: 80.69% | Weed: 61.12% (目标)
+2026-01-15 20:35:48,872 | 
+📊 Ep 39 Result:
+   Train Loss: 0.0770 | Val Loss: 0.0674
+   mIoU: 73.31% | mF1: 83.16%
+   [F1 Detail] Crop: 82.51% | Weed: 67.71% (目标)
+2026-01-15 20:36:44,219 | 
+📊 Ep 40 Result:
+   Train Loss: 0.0736 | Val Loss: 0.0730
+   mIoU: 67.71% | mF1: 78.61%
+   [F1 Detail] Crop: 76.68% | Weed: 60.23% (目标)
+2026-01-15 20:37:39,478 | 
+📊 Ep 41 Result:
+   Train Loss: 0.0724 | Val Loss: 0.0637
+   mIoU: 76.66% | mF1: 85.70%
+   [F1 Detail] Crop: 85.50% | Weed: 72.15% (目标)
+2026-01-15 20:37:39,713 | 🌟 新高! 模型已保存: /media/cclsol/df07c0f4-31b8-4090-8a4a-8c254d91c123/ch/MSU-Net/U-Net-v2/code/checkpoints/Eschikon_Run/best_model.pth
+2026-01-15 20:38:34,197 | 
+📊 Ep 42 Result:
+   Train Loss: 0.0691 | Val Loss: 0.0761
+   mIoU: 66.21% | mF1: 77.10%
+   [F1 Detail] Crop: 77.04% | Weed: 55.49% (目标)
+2026-01-15 20:39:29,409 | 
+📊 Ep 43 Result:
+   Train Loss: 0.0712 | Val Loss: 0.0631
+   mIoU: 73.15% | mF1: 82.60%
+   [F1 Detail] Crop: 86.03% | Weed: 62.56% (目标)
+2026-01-15 20:40:24,694 | 
+📊 Ep 44 Result:
+   Train Loss: 0.0679 | Val Loss: 0.0640
+   mIoU: 73.26% | mF1: 83.10%
+   [F1 Detail] Crop: 82.70% | Weed: 67.34% (目标)
+2026-01-15 20:41:19,292 | 
+📊 Ep 45 Result:
+   Train Loss: 0.0715 | Val Loss: 0.0670
+   mIoU: 68.98% | mF1: 79.56%
+   [F1 Detail] Crop: 79.25% | Weed: 60.44% (目标)
+2026-01-15 20:42:14,899 | 
+📊 Ep 46 Result:
+   Train Loss: 0.0703 | Val Loss: 0.0654
+   mIoU: 69.84% | mF1: 79.86%
+   [F1 Detail] Crop: 83.28% | Weed: 57.32% (目标)
+2026-01-15 20:43:09,210 | 
+📊 Ep 47 Result:
+   Train Loss: 0.0666 | Val Loss: 0.0637
+   mIoU: 71.47% | mF1: 81.81%
+   [F1 Detail] Crop: 79.58% | Weed: 66.74% (目标)
+2026-01-15 20:44:04,145 | 
+📊 Ep 48 Result:
+   Train Loss: 0.0657 | Val Loss: 0.0753
+   mIoU: 66.62% | mF1: 77.65%
+   [F1 Detail] Crop: 75.82% | Weed: 58.35% (目标)
+2026-01-15 20:44:58,481 | 
+📊 Ep 49 Result:
+   Train Loss: 0.0672 | Val Loss: 0.0668
+   mIoU: 72.88% | mF1: 82.84%
+   [F1 Detail] Crop: 81.68% | Weed: 67.55% (目标)
+2026-01-15 20:45:52,536 | 
+📊 Ep 50 Result:
+   Train Loss: 0.0662 | Val Loss: 0.0647
+   mIoU: 72.13% | mF1: 82.42%
+   [F1 Detail] Crop: 78.82% | Weed: 69.25% (目标)
+2026-01-15 20:46:47,049 | 
+📊 Ep 51 Result:
+   Train Loss: 0.0634 | Val Loss: 0.0599
+   mIoU: 73.75% | mF1: 83.54%
+   [F1 Detail] Crop: 82.43% | Weed: 68.94% (目标)
+2026-01-15 20:47:41,514 | 
+📊 Ep 52 Result:
+   Train Loss: 0.0618 | Val Loss: 0.0555
+   mIoU: 76.11% | mF1: 85.30%
+   [F1 Detail] Crop: 84.97% | Weed: 71.55% (目标)
+2026-01-15 20:48:35,731 | 
+📊 Ep 53 Result:
+   Train Loss: 0.0609 | Val Loss: 0.0601
+   mIoU: 74.42% | mF1: 83.61%
+   [F1 Detail] Crop: 87.08% | Weed: 64.48% (目标)
+2026-01-15 20:49:30,208 | 
+📊 Ep 54 Result:
+   Train Loss: 0.0674 | Val Loss: 0.0647
+   mIoU: 71.64% | mF1: 81.46%
+   [F1 Detail] Crop: 84.13% | Weed: 61.10% (目标)
+2026-01-15 20:50:24,954 | 
+📊 Ep 55 Result:
+   Train Loss: 0.0633 | Val Loss: 0.0653
+   mIoU: 70.46% | mF1: 80.76%
+   [F1 Detail] Crop: 81.01% | Weed: 62.21% (目标)
+2026-01-15 20:51:19,352 | 
+📊 Ep 56 Result:
+   Train Loss: 0.0624 | Val Loss: 0.0573
+   mIoU: 72.58% | mF1: 82.54%
+   [F1 Detail] Crop: 82.40% | Weed: 66.01% (目标)
+2026-01-15 20:52:13,922 | 
+📊 Ep 57 Result:
+   Train Loss: 0.0600 | Val Loss: 0.0632
+   mIoU: 70.54% | mF1: 80.80%
+   [F1 Detail] Crop: 81.33% | Weed: 62.01% (目标)
+2026-01-15 20:53:08,618 | 
+📊 Ep 58 Result:
+   Train Loss: 0.0581 | Val Loss: 0.0677
+   mIoU: 68.36% | mF1: 79.26%
+   [F1 Detail] Crop: 76.28% | Weed: 62.54% (目标)
+2026-01-15 20:54:03,693 | 
+📊 Ep 59 Result:
+   Train Loss: 0.0588 | Val Loss: 0.0633
+   mIoU: 69.94% | mF1: 80.26%
+   [F1 Detail] Crop: 81.14% | Weed: 60.59% (目标)
+2026-01-15 20:54:58,452 | 
+📊 Ep 60 Result:
+   Train Loss: 0.0593 | Val Loss: 0.0583
+   mIoU: 72.22% | mF1: 82.18%
+   [F1 Detail] Crop: 82.75% | Weed: 64.62% (目标)
+2026-01-15 20:55:52,887 | 
+📊 Ep 61 Result:
+   Train Loss: 0.0562 | Val Loss: 0.0605
+   mIoU: 71.39% | mF1: 81.58%
+   [F1 Detail] Crop: 81.26% | Weed: 64.34% (目标)
+2026-01-15 20:56:47,766 | 
+📊 Ep 62 Result:
+   Train Loss: 0.0598 | Val Loss: 0.0570
+   mIoU: 76.03% | mF1: 85.29%
+   [F1 Detail] Crop: 84.23% | Weed: 72.28% (目标)
+2026-01-15 20:57:43,124 | 
+📊 Ep 63 Result:
+   Train Loss: 0.0548 | Val Loss: 0.0602
+   mIoU: 71.11% | mF1: 81.47%
+   [F1 Detail] Crop: 79.80% | Weed: 65.51% (目标)
+2026-01-15 20:58:37,674 | 
+📊 Ep 64 Result:
+   Train Loss: 0.0571 | Val Loss: 0.0723
+   mIoU: 66.98% | mF1: 77.76%
+   [F1 Detail] Crop: 77.98% | Weed: 56.44% (目标)
+2026-01-15 20:59:33,025 | 
+📊 Ep 65 Result:
+   Train Loss: 0.0555 | Val Loss: 0.0566
+   mIoU: 76.74% | mF1: 85.52%
+   [F1 Detail] Crop: 87.79% | Weed: 69.33% (目标)
+2026-01-15 21:00:27,450 | 
+📊 Ep 66 Result:
+   Train Loss: 0.0540 | Val Loss: 0.0576
+   mIoU: 74.58% | mF1: 84.21%
+   [F1 Detail] Crop: 82.73% | Weed: 70.61% (目标)
+2026-01-15 21:01:22,054 | 
+📊 Ep 67 Result:
+   Train Loss: 0.0563 | Val Loss: 0.0558
+   mIoU: 74.00% | mF1: 83.30%
+   [F1 Detail] Crop: 86.54% | Weed: 64.09% (目标)
+2026-01-15 21:02:16,600 | 
+📊 Ep 68 Result:
+   Train Loss: 0.0527 | Val Loss: 0.0607
+   mIoU: 75.69% | mF1: 85.10%
+   [F1 Detail] Crop: 83.01% | Weed: 72.91% (目标)
+2026-01-15 21:03:11,043 | 
+📊 Ep 69 Result:
+   Train Loss: 0.0539 | Val Loss: 0.0595
+   mIoU: 72.27% | mF1: 82.20%
+   [F1 Detail] Crop: 82.99% | Weed: 64.41% (目标)
+2026-01-15 21:04:05,788 | 
+📊 Ep 70 Result:
+   Train Loss: 0.0522 | Val Loss: 0.0699
+   mIoU: 68.58% | mF1: 79.52%
+   [F1 Detail] Crop: 75.43% | Weed: 64.20% (目标)
